@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Tailwind</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body class="bg-gray-200">
+    <div class="flex mx-auto max-w-screen-md max-h-full bg-white h-screen">
+        <nav class="flex-no-wrap fixed top-0 z-10 max-w-screen-md flex w-full 
+            justify-between flex w-full items-center justify-between bg-green-500 px-6 py-4">
+            <div class="flex w-full flex-row justify-between mx-auto">
+                <div class="flex w-full justify-start items-center">
+                    <a href="index.html" class='text-2xl text-white bx bxs-chevron-left'></a>
+                </div>
+                <p class="flex w-full font-bold text-white pt-2 text-sm md:text-lg mx-auto justify-center">Kebayoran Lama</p>
+                <div class="flex w-full  flex w-full justify-end items-center">
+                    <i class=' text-3xl bx bx-dots-horizontal-rounded text-white'></i>
+                </div>
+            </div>
+        </nav>
+        <div class="flex flex-col w-full mt-16">
+
+            <div class="flex flex-col w-full bg-white border-gray-100">
+                <a href="#" class="flex flex-row pt-5 pb-6 pl-5 pr-12 w-full">
+                    <div class="flex flex-col px-3 pt-2 rounded-lg">
+                        <i
+                            class='bx bxs-heart text-red-400 bg-gray-300 p-2 rounded-tl-lg rounded-tr-lg text-2xl text-gray-500 justify-items-end'></i>
+                        <p class="text-sm bg-gray-300 p-2 rounded-bl-lg rounded-br-lg text-center font-bold">2</p>
+                    </div>
+                    <div class="flex flex-col pl-4 pt-2">
+                        <p class="text-md">The quick brown fox jumps over the lazy dog, showcasing agility and speed,
+                            while the sun sets in a colorful sky, painting a serene evening scene filled with
+                            tranquility and beauty.</p>
+                        <div class="flex w-full flex-row items-center pt-3">
+                            <p class="text-sm text-gray-400">Kebayoran Lama, 2h ago</p>
+                            <div class="flex pl-5 pt-1 text-gray-400">
+                                <i class='bx bx-reply text-md'></i>
+                                <p class="text-sm">2</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="flex flex-col w-full bg-white">
+                <a href="#" class="flex flex-row pt-5 pb-6 pl-5 pr-12 w-full">
+                    <div class="flex flex-col px-3 pt-2">
+                        <img src="assets/images/cheese-32.png" class='bg-red-100 rounded-full object-fill p-3'></>
+                    </div>
+                    <div class="flex flex-col pl-4 pt-2">
+                        <p class="text-md">That you, J?</p>
+                        <div class="flex w-full flex-row items-center pt-3">
+                            <p class="text-sm text-gray-400">2h ago</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="flex flex-col w-full bg-white">
+                <a href="#" class="flex flex-row pt-5 pb-6 pl-5 pr-12 w-full">
+                    <div class="flex flex-col px-3 pt-2">
+                        <img src="assets/images/crown-32.png" class='bg-green-100 rounded-full object-fill p-3'></>
+                    </div>
+                    <div class="flex flex-col pl-4 pt-2">
+                        <p class="text-md">Nope</p>
+                        <div class="flex w-full flex-row items-center pt-3">
+                            <p class="text-sm text-gray-400">2h ago</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div
+                class="fixed flex max-w-screen-md bottom-0 z-50 w-full h-16 -translate-x-1/2 bg-white border-t border-gray-200">
+                <div class="flex w-full justify-around mx-auto ">
+                    <a data-twe-toggle="tooltip" data-twe-placement="top" data-twe-ripple-init
+                        data-twe-ripple-color="light" title="Home"
+                        class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group"
+                        href="#">
+                        <i class='bx bxs-home text-3xl text-gray-600'></i>
+                        <span class="sr-only">Home</span>
+                    </a>
+
+                    <a data-twe-toggle="tooltip" data-twe-placement="top" data-twe-ripple-init
+                        data-twe-ripple-color="light" title="Posts"
+                        class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group"
+                        href="#">
+                        <i class='bx bx-list-ul text-3xl text-gray-600'></i>
+                        <span class="sr-only">Posts</span>
+                    </a>
+                    <a data-twe-toggle="tooltip" data-twe-placement="top" data-twe-ripple-init
+                        data-twe-ripple-color="light" title="Messages"
+                        class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group"
+                        href="#">
+                        <i class='bx bx-message-alt-dots text-3xl text-gray-600'></i>
+                        <span class="sr-only">Messages</span>
+                    </a>
+                    <a data-twe-toggle="tooltip" data-twe-placement="top" data-twe-ripple-init
+                        data-twe-ripple-color="light" title="Settings"
+                        class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group"
+                        href="#">
+                        <i class='bx bxs-cog text-3xl text-gray-600'></i>
+                        <span class="sr-only">Settings</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+</body>
+
+</html>
